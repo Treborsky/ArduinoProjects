@@ -2,9 +2,9 @@ const int stepper_pins[] = { 9, 10, 11, 12 };
 const int pin_number = 4;
 int step_number = 0;
 
-const bool clkw = true;
-const bool aclkw = false;
-
+const bool clkw = true;        // turn the motor clockwise*
+const bool aclkw = false;      // turn the motor anti-clockwise*
+                               // *when the turn shaft is facing up
 void setup() 
 {
         // initialize output pins
