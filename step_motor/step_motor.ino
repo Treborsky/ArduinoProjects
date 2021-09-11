@@ -24,11 +24,11 @@ void step(bool direction)
 {
         if(direction)
         {
-                write_select_high(stepper_pins, step_number, pin_number);
+                write_index_high(stepper_pins, step_number, pin_number);
         }
         else
         {
-                write_select_high(stepper_pins, 3 - step_number, pin_number);
+                write_index_high(stepper_pins, 3 - step_number, pin_number);
         }
 
         step_number++;
