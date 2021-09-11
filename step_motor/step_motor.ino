@@ -38,7 +38,7 @@ void step(bool direction)
         }
 }
 
-void write_select_high(const int pins[], const int index, const int size)
+void write_index_high(const int pins[], const int index, const int size)
 {
         for(int i = 0; i < size; ++i)
         {
